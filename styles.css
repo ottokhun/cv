@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,900&display=swap");
+
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #797979;
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.semibold {
+    font-weight: 600;
+    font-family: 15;
+}
+
+.resume {
+    width: 700px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row !important;
+}
+
+.resume .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.resume .resume_gauche {
+    width: 350px;
+    background: #246676;
+}
+
+.resume .resume_gauche .resume_contenu {
+    padding: 0 10px;
+}
+
+.resume .resume_item {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 15px 0;
+    border-top: 2px solid;
+}
+
+.resume .resume_item .resume_item:last-child {
+    border-bottom: 0px;
+}
+
+.resume .resume_gauche ul li {
+    display: flex;
+    align-items: center;
+}
+
+.resume .resume_gauche ul li:last-child {
+    margin-bottom: 0;
+}
+
+.resume .resume_profile {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.resume .resume_droite {
+    width: 350px;
+    background: #FFF8EE;
+    color: #363636;
+    padding: 10px;
+}
+
+.resume .resume_droite ul li {
+    display: flex;
+    align-items: center;
+}
+
+.resume .titre {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .resume {
+        flex-direction: column !important;
+        width: 350px !important;
+    }
+}
+
+
+.resume .resume_droite .loisirs ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_droite .loisirs ul li {
+    width: 50px;
+    height: 50px;
+    padding-left: 12px;
+    border: 2px solid #246676;
+    border-radius: 50%;
+    position: relative;
+    color: #246676;
+
+}
+
+.resume .resume_droite .loisirs ul li i {
+    font-size: 20px;
+}
